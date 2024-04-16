@@ -12,10 +12,10 @@ jobs:
     # Permissions necessary for Changesets to push a new branch and open PRs
     # (for automated Version Packages PRs), and request the JWT for provenance.
     # More info: https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#adding-permissions-settings
-    permissions:
-      contents: write
-      pull-requests: write
-      id-token: write
+    # permissions:
+    #   contents: write
+    #   pull-requests: write
+    #   id-token: write
     if: |
       github.repository == 'jerelmiller/actions-testing' &&
       github.event.issue.pull_request &&
